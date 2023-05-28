@@ -18,7 +18,8 @@ pipeline {
       steps {
         container('gitleaks'){
           echo 'Executing in gitleaks container'
-          sh 'ls'
+          sh 'gitleaks detect -s . -v -f json -r reports/gitleaks.json'
+          sh 'cat reports/gitleaks.json'
           echo 'Deploy stage finished!'
         }
       }
