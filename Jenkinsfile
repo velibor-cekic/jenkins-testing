@@ -5,6 +5,10 @@ pipeline {
     }
   }
   
+  environment {
+    PASSWORD="49494949466dfas9d4f9ase4gf9as4!fdsf$%#@#%"
+  }
+  
   stages {
     stage("Build"){
       steps{
