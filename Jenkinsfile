@@ -14,6 +14,7 @@ pipeline {
       steps{
           echo 'Build step! Simple creation of reports directory'
           sh 'mkdir reports'
+          sh 'env'
           echo 'Build step finished!'
           
       }
