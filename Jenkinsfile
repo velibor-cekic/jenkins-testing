@@ -35,6 +35,7 @@ pipeline {
       steps{
         container("ddimport"){
           sh 'dd-import-languages.sh'
+        }
       }
   }
 }
