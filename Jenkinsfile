@@ -37,5 +37,6 @@ pipeline {
           sh 'dd-import-languages.sh'
         }
       }
+    }
   }
 }
