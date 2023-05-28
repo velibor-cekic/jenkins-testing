@@ -7,8 +7,12 @@ pipeline {
   
   stages {
     stage("Build"){
+      steps{
+      }
     }
     stage("Deploy"){
+      steps {
+      }
     }
   }
 }
