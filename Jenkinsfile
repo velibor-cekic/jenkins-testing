@@ -8,17 +8,19 @@ pipeline {
   stages {
     stage("Build"){
       steps{
-          echo 'Build step'
-          sh 'hostname'
-          sh 'pwd'
-          sh 'ls'
-          sh'gitleaks'
-          echo 'Finished steps in build stage!'
+          echo 'Build step! Simple creation of reports directory'
+          sh 'mkdir reports'
+          echo 'Build step finished!'
+          
       }
     }
     stage("Deploy"){
       steps {
-        echo 'Deploy step'
+        container('gitleaks'){
+          echo 'Executing in gitleaks container'
+          sh 'ls'
+          echo 'Deploy stage finished!'
+        }
       }
     }
   }
