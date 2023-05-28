@@ -9,6 +9,9 @@ pipeline {
     stage("Build"){
       steps{
           echo 'Build step'
+          sh 'hostname'
+          sh 'pwd'
+          echo 'Finished steps in build stage!'
       }
     }
     stage("Deploy"){
