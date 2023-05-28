@@ -11,6 +11,8 @@ pipeline {
           echo 'Build step'
           sh 'hostname'
           sh 'pwd'
+          sh 'ls'
+          sh'gitleaks'
           echo 'Finished steps in build stage!'
       }
     }
