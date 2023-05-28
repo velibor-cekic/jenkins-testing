@@ -30,5 +30,11 @@ pipeline {
         }
       }
     }
+    
+    stage("Upload reports"){
+      steps{
+        container("ddimport"){
+          sh 'dd-import-languages.sh'
+      }
   }
 }
