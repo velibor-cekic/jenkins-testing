@@ -7,6 +7,11 @@ pipeline {
   
   environment {
     PASSWORD="49494949466dfas9d4f9ase4gf9as4!fdsf#@#"
+    DD_URL="http://defectdojo-django
+    DD_API_KEY="c076a0e014c696d0472e37b1f3b9d5b1ee06cf1d"
+    DD_PRODUCT_TYPE_NAME="Neos Core"
+    DD_PRODUCT_NAME="DD Integration"
+    
   }
   
   stages {
@@ -34,6 +39,7 @@ pipeline {
     stage("Upload reports"){
       steps{
         container("ddimport"){
+          sh 'DD_FILE_NAME="reports/gitleaks.json"
           sh 'dd-import-languages.sh'
         }
       }
