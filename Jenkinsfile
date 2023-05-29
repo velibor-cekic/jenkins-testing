@@ -39,7 +39,7 @@ pipeline {
     stage("Upload reports"){
       steps{
         container("ddimport"){
-          sh 'DD_FILE_NAME="reports/gitleaks.json"
+          sh 'DD_FILE_NAME="reports/gitleaks.json"'
           sh 'dd-import-languages.sh'
         }
       }
