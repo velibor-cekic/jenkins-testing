@@ -7,8 +7,8 @@ pipeline {
   
   environment {
     PASSWORD="49494949466dfas9d4f9ase4gf9as4!fdsf#@#"
-    DD_URL="http://defectdojo-django"
-    DD_API_KEY="c076a0e014c696d0472e37b1f3b9d5b1ee06cf1d"
+    DD_URL="http://ingress-nginx-controller.ingress-nginx"
+    DD_API_KEY="450612c8a88757292cb8bb6769b142dcd30fef8d"
     DD_PRODUCT_TYPE_NAME="Neos Core"
     DD_PRODUCT_NAME="DD Integration"
     
