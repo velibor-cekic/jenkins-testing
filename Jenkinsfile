@@ -48,7 +48,7 @@ pipeline {
       steps{
         container("ddimport"){
           sh 'DD_FILE_NAME="reports/gitleaks.json"'
-          sh 'dd-import-languages.sh'
+          sh 'dd-reimport-findings.sh'
         }
       }
     }
