@@ -8,7 +8,7 @@ pipeline {
   environment {
     PASSWORD="49494949466dfas9d4f9ase4gf9as4!fdsf#@#"
     
-    DD_URL =" http://ingress-nginx-controller.ingress-nginx"
+    DD_URL = "https://defectdojo.default.minikube.local/"
     DD_API_KEY = "450612c8a88757292cb8bb6769b142dcd30fef8d"
     DD_PRODUCT_TYPE_NAME = "Neos Core"
     DD_PRODUCT_NAME = "CI/CD Pipeline"
