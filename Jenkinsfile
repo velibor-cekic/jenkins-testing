@@ -7,11 +7,19 @@ pipeline {
   
   environment {
     PASSWORD="49494949466dfas9d4f9ase4gf9as4!fdsf#@#"
-    DD_URL="http://ingress-nginx-controller.ingress-nginx"
-    DD_API_KEY="450612c8a88757292cb8bb6769b142dcd30fef8d"
-    DD_PRODUCT_TYPE_NAME="Neos Core"
-    DD_PRODUCT_NAME="DD Integration"
     
+    DD_URL =" http://ingress-nginx-controller.ingress-nginx"
+    DD_API_KEY = "450612c8a88757292cb8bb6769b142dcd30fef8d"
+    DD_PRODUCT_TYPE_NAME = "Neos Core"
+    DD_PRODUCT_NAME = "CI/CD Pipeline"
+    DD_SSL_VERIFY = "False"
+
+    DD_TEST_NAME = "Gitleaks"
+    DD_TEST_TYPE_NAME = "Gitleaks Scan"
+
+    DD_ENGAGEMENT_NAME = "DD Integration"
+
+    DD_FILE_NAME = "reports/gitleaks.json"    
   }
   
   stages {
