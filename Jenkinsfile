@@ -17,7 +17,7 @@ pipeline {
     DD_TEST_NAME = "Gitleaks"
     DD_TEST_TYPE_NAME = "Gitleaks Scan"
 
-    DD_ENGAGEMENT_NAME = "DD Integration"
+    DD_ENGAGEMENT_NAME = "DD Integration - Danas"
 
     DD_FILE_NAME = "reports/gitleaks.json"    
   }
