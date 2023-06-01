@@ -8,7 +8,7 @@ pipeline {
   environment {
     PASSWORD="49494949466dfas9d4f9ase4gf9as4!fdsf#@#"
     
-    DD_URL = "https://defectdojo.default.minikube.local/"
+    DD_URL = "https://defectdojo.default.minikube.local"
     DD_API_KEY = credentials("DD_API_KEY")
     DD_PRODUCT_TYPE_NAME = "Neos Core"
     DD_PRODUCT_NAME = "Core Product"
