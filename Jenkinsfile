@@ -9,9 +9,9 @@ pipeline {
     PASSWORD="49494949466dfas9d4f9ase4gf9as4!fdsf#@#"
     
     DD_URL = "https://defectdojo.default.minikube.local/"
-    DD_API_KEY = "450612c8a88757292cb8bb6769b142dcd30fef8d"
+    DD_API_KEY = "945165ce127f18a3ad8c851a03b5e13ff4ef9951"
     DD_PRODUCT_TYPE_NAME = "Neos Core"
-    DD_PRODUCT_NAME = "CI/CD Pipeline"
+    DD_PRODUCT_NAME = "Core Product"
     DD_SSL_VERIFY = "False"
 
     DD_TEST_NAME = "Gitleaks"
