@@ -18,6 +18,10 @@ pipeline {
     DD_TEST_TYPE_NAME = "Gitleaks Scan"
 
     DD_ENGAGEMENT_NAME = """${BUILD_ID} - ${sh(returnStdout: true, script: 'date --iso-8601=seconds')} / ${GIT_BRANCH}"""
+    
+    DD_BUILD_ID = "${BUILD_ID}"
+    DD_BRANCH_TAG = "${GIT_BRANCH}"
+    DD_COMMIT_HASH = "${GIT_COMMIT}"
 
     DD_FILE_NAME = "reports/gitleaks.json"    
   }
