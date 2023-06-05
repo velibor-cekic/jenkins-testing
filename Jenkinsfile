@@ -34,6 +34,18 @@ pipeline {
           sh 'env'
           echo 'Build step finished!'
           
+          echo 'Testing sh command in block and separate lines'
+          echo 'sh on separate lines'
+          
+          sh 'export TEST_VAR="test_var"'
+          sh 'echo $TEST_VAR'
+          
+          echo 'sh in block'
+          sh '''
+          	export TEST_VAR_2 = "test_var_2"
+          	echo $TEST_VAR_2
+          '''
+          
       }
     }
     stage("Deploy"){
