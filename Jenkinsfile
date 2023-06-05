@@ -42,7 +42,7 @@ pipeline {
           
           echo 'sh in block'
           sh '''
-          	export TEST_VAR_2 = "test_var_2"
+          	export TEST_VAR_2="test_var_2"
           	echo $TEST_VAR_2
           '''
           
